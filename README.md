@@ -65,3 +65,16 @@ File shoudld look like this:
 
 ```
 
+* Add Blog Title to Heading 
+
+in ` /var/www/html/joeleb.com/public_html/content/themes/casper/index.hbs `
+
+```
+    {{#if @blog.logo}}
+        <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+         <br>
+         {{@blog.title}}
+     {{else}}
+        {{@blog.title}}
+    {{/if}}
+```
